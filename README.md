@@ -4,8 +4,6 @@
 > Chaque agent a un rôle précis : collecter, analyser, puis rédiger un email personnalisé.
 
 ##  Architecture
-
-(assets/architecture_poc.png)
 ![alt text](rchitecture_poc.png.png)
 
 ##  Stack technique
