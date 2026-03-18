@@ -64,7 +64,7 @@ Pour chaque entreprise de la liste, le pipeline génère :
 2. **Analyse commerciale** — 3 opportunités identifiées
 3. **Email de prospection** — prêt à envoyer
 
-## 🔮 Perspectives d'évolution
+##  Perspectives d'évolution
 
 - Connecter un CRM (HubSpot, Salesforce) pour automatiser l'envoi
 - Remplacer Wikipedia par une source métier (LinkedIn, base interne)
