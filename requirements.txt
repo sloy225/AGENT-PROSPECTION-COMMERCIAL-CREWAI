@@ -1,0 +1,9 @@
+# Orchestration multi-agents
+crewai
+
+# Support LLMs locaux et alternatifs (Ollama, Mistral, etc.)
+crewai[litellm]
+litellm
+
+# API Wikipedia pour la collecte de données
+wikipedia

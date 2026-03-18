@@ -1,0 +1,28 @@
+# =============================================================================
+# .gitignore — Fichiers et dossiers exclus du suivi Git
+# =============================================================================
+
+# Environnement virtuel Python (lourd, non partageable)
+.venv/
+venv/
+env/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variables d'environnement sensibles (clés API, mots de passe) il faut pas qu'on les voient sur github // base de la securité en dev !!!!!
+.env
+
+# Éditeurs de code
+.vscode/
+.idea/
+
+# Système d'exploitation
+.DS_Store        # pour macOS
+Thumbs.db        #  pour Windows
+
+# Logs
+*.log
