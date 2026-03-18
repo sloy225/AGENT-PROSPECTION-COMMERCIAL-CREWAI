@@ -6,6 +6,7 @@
 ##  Architecture
 
 (assets/architecture_poc.png)
+![alt text](rchitecture_poc.png.png)
 
 ##  Stack technique
 CrewAI : orchestre plusieurs agents pour gérer les tâches de manière coordonnée.

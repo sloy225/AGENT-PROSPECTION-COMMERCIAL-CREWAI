@@ -21,7 +21,7 @@ from src.tools import WikipediaTool
 # à CrewAI, y compris les modèles locaux Ollama.
 # -----------------------------------------------------------------------------
 llm = LLM(
-    model="ollama/deepseek-r1:1.5b",          # Format : "ollama/<nom_du_modele>"
+    model="ollama/mistral",          # Format : "ollama/<nom_du_modele>"
     base_url="http://localhost:11434" # URL par défaut d'Ollama en local
 )
 
