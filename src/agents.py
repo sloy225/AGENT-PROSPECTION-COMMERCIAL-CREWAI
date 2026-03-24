@@ -11,7 +11,13 @@
 
 from crewai import Agent, LLM
 from src.tools import WikipediaTool
+from dotenv import load_dotenv
+import os
+load_dotenv()  # Charge les variables d'environnement depuis le fichier .env
 
+# Récupération des variables d'environnement pour la configuration du LLM
+model = os.getenv("OLLAMA_MODEL")
+base_url = os.getenv("OLLAMA_BASE_URL")
 
 # -----------------------------------------------------------------------------
 # Configuration du LLM (Large Language Model)
@@ -21,8 +27,8 @@ from src.tools import WikipediaTool
 # à CrewAI, y compris les modèles locaux Ollama.
 # -----------------------------------------------------------------------------
 llm = LLM(
-    model="ollama/mistral",          # Format : "ollama/<nom_du_modele>"
-    base_url="http://localhost:11434" # URL par défaut d'Ollama en local
+    model=model,       
+    base_url= base_url
 )
 
 # Instanciation de l'outil Wikipedia (partagé avec l'agent Chercheur)
@@ -46,8 +52,10 @@ chercheur = Agent(
     ),
     tools=[wiki_tool],  # Seul agent avec accès à Wikipedia
     llm=llm,
-    verbose=True        # Affiche les logs de raisonnement dans le terminal
+    verbose=True,
+    max_iter=3, # Limite le nombre d'itérations pour éviter les boucles infinies (optionnel)
 )
+  
 
 
 # -----------------------------------------------------------------------------
@@ -66,7 +74,7 @@ analyste = Agent(
         "et les angles d'approche commerciale les plus pertinents."
     ),
     llm=llm,
-    verbose=True
+    verbose=True,
 )
 
 
@@ -86,5 +94,6 @@ redacteur = Agent(
         "Ton style est direct, professionnel et orienté résultats."
     ),
     llm=llm,
-    verbose=True
+    verbose=True,
+     langage="fr" 
 )

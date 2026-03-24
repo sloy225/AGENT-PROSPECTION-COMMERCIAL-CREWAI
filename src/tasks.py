@@ -53,7 +53,7 @@ tache_analyse = Task(
         "et produis une analyse commerciale structurée en 3 parties : "
         "1. Les besoins potentiels de l'entreprise (technologiques, humains, organisationnels) "
         "2. Les opportunités commerciales identifiées (minimum 3) "
-        "3. L'angle d'approche recommandé pour la prospection"
+        "3. L'angle d'approche recommandé pour la prospection de '{entreprise}' (en lien avec les besoins et opportunités)"
     ),
     expected_output=(
         "Une analyse commerciale avec 3 opportunités clairement identifiées "

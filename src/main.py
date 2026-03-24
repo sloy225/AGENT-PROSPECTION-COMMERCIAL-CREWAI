@@ -36,7 +36,7 @@ def main():
     """
 
     # Liste des entreprises à prospecter — modifiable selon le besoin
-    entreprises: List[str] = ["Air Côte d'Ivoire"]
+    entreprises: List[str] = ["SNCF Réseau"]
 
     for entreprise in entreprises:
         # Séparateur visuel pour distinguer chaque traitement dans les logs
