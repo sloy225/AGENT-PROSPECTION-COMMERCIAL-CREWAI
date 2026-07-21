@@ -22,7 +22,7 @@ crewai-prospection-poc/
 │   ├── agents.py     # Définition des 3 agents
 │   ├── tasks.py      # Définition des 3 tâches
 │   ├── tools.py      # Outil Wikipedia custom
-│   └── main.py       # Point d'entrée
+│   └── main.py       # Point d'entrée de l'application
 ├── assets/
 │   └── architecture_poc.png
 ├── .env.example
