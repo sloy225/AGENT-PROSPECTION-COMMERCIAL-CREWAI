@@ -1,4 +1,4 @@
-#  POC Prospection Commerciale — CrewAI
+#  POC Prospection Commerciale CrewAI
 
 > Système multi-agents IA pour automatiser la prospection commerciale B2B.
 > Chaque agent a un rôle précis : collecter, analyser, puis rédiger un email personnalisé.
